@@ -1,31 +1,26 @@
 import styled from 'styled-components';
 
-function Button({ children, ...props }) {
-    return <StyledButton {...props}><span>{children}</span> </StyledButton>;
+function Button({ buttonType, buttonText, onClick }) {
+  return <StyledButton >
+    <button type={buttonType} onClick={onClick} >{buttonText}</button>
+  </StyledButton>;
 }
 
-const StyledButton = styled.button`
-    position: relative;
-    height: 40px;
-    width: 120px;
-    background: #2B6397;
-    color: #fff;
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
-    cursor:pointer;
-    border: 1px solid #008AC8;
-
-    &:disabled {
-      background: transparent;
-      color: #DDDBDA;
-      cursor: not-allowed;
-      border: 1px solid #DDDBDA;
-      border-radius: 4px;
-      box-shadow: none;
-      font-size: 16px;
-      font-weight: 400;
-    }
+const StyledButton = styled.div`
+  text-align: center;
+  margin-top: 30px;
+  
+  button {
+    background: #9a41ea;
+    border-radius: 7px;
+    color: #ffff;
+    padding: 15px 42px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    width: 170px;
+  }
 `;
 
 export default Button;
