@@ -1,0 +1,2 @@
+export const SET_ISSUES = "SET_ISSUES";
+export const GET_ISSUES_FROM_STORE = "GET_ISSUES_FROM_STORE";
