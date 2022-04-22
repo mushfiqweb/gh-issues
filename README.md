@@ -26,5 +26,8 @@ You will also see any lint errors in the console.
 3. Find a env variable named `REACT_APP_GITHUB_USER_TOKEN`
 4. Now go to your Github profile and create your own Personal access token
 5. If do not know how to create a Personal access token, then [follow these steps](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+6. Add your own Personal access token
 
+
+## Used  [OctoKit REST](https://octokit.github.io/rest.js/v18) to access github `API`s
 
