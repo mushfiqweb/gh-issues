@@ -1,7 +1,6 @@
 import {
     SET_ISSUES,
-    GET_ISSUES_FROM_STORE,
-    GET_FILTERED_ISSUES
+    GET_ISSUES_FROM_STORE
 } from "./types";
 
 
@@ -15,15 +14,5 @@ export const setIssues = (issues) => (dispatch) => {
 export const getIssuesFromStore = () => (dispatch) => {
     dispatch({
         type: GET_ISSUES_FROM_STORE
-    });
-}
-
-export const getFilteredIssues = (issues, filter) => (dispatch) => {
-    dispatch({
-        type: GET_FILTERED_ISSUES,
-        payload: {
-            issues,
-            filter
-        }
     });
 }

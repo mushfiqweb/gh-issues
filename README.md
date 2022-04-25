@@ -33,4 +33,6 @@ You will also see any lint errors in the console.
 
 ## TODOs:
 1. Add Unit Test
-2. There is a massive scope to improve the [TextInput](https://github.com/mushfiqweb/gh-issues/tree/master/src/components/TextInput) component.
+2. Add pagination
+3. There is a massive scope to improve the [TextInput](https://github.com/mushfiqweb/gh-issues/tree/master/src/components/TextInput) component.
+

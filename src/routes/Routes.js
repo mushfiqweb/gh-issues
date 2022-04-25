@@ -1,6 +1,5 @@
 import Home from 'pages/Home';
 import IssueList from 'pages/IssueList';
-import Showcase from 'pages/Showcase';
 
 import { Switch } from 'react-router-dom';
 import path from './paths';
@@ -18,9 +17,6 @@ const Routes = () => {
             </PublicRoute>
             <PublicRoute exact path={path.ISSUELIST}>
                 <IssueList />
-            </PublicRoute>
-            <PublicRoute exact path={path.SHOWCASE}>
-                <Showcase />
             </PublicRoute>
             <PublicRoute path="*">
                 <PageNotFound />
