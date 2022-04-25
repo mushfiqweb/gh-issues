@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Get a list of issues for a given Github repository by its owner and name
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -31,3 +31,6 @@ You will also see any lint errors in the console.
 
 ## Used  [OctoKit REST](https://octokit.github.io/rest.js/v18) to access github `API`s
 
+## TODOs:
+1. Add Unit Test
+2. There is a massive scope to improve the [TextInput](https://github.com/mushfiqweb/gh-issues/tree/master/src/components/TextInput) component.
