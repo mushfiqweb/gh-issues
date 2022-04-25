@@ -1,23 +1,35 @@
 import styled from 'styled-components';
+import classNames from 'classnames';
 
-function TextInput({ onChange, value, placeholder, name }) {
+function TextInput({ onChange, value, placeholder, name, invalid, isTouched, inputLabel }) {
+
+
+    const cssClasses = classNames({
+        'valid-border': true,
+        'error-border': invalid ? true : false,
+    });
     return (
         <Wrapper>
             <div className='owner-repo'>
                 <div className="owner">
-                    <label htmlFor="owner">
-                        Owner <span>*</span>
+                    <label htmlFor={inputLabel}>
+                        {inputLabel} <span>*</span>
                     </label>
                     <br />
                     <input
-                        className="valid-border error-border"
-                        type="text"                        
+                        className={cssClasses}
+                        type="text"
                         name={name}
                         placeholder={placeholder}
                         onChange={onChange}
                     />
-                    {/* <span className="valid-mark">✔</span>
-                    <p className="required">This field is required</p> */}
+                    {
+                        !invalid && isTouched && <span className="valid-mark">✔</span>
+                    }
+                    {
+                        invalid && <p className="required">This field is required</p>
+                    }
+
                 </div>
             </div>
         </Wrapper>
